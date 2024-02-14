@@ -1,0 +1,48 @@
+/* style.css */
+
+#animation-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#videoPlayer {
+  width: 90%; /* Adjusted width for responsiveness */
+  max-width: 800px;
+  margin: 0 auto; /* Center the video player */
+}
+
+button {
+  display: inline-block;
+  margin: 10px auto; /* Center the button horizontally and add margin top/bottom */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  /* Apply specific styles for larger screens */
+  #videoPlayer {
+      width: 60%; /* Adjusted width for larger screens */
+  }
+
+  button {
+      margin: 10px; /* Reset margin for buttons on larger screens */
+  }
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.playing {
+  background-color: #28a745 !important;
+}
+
+.paused {
+  background-color: #dc3545 !important;
+}
